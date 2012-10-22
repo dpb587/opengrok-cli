@@ -1,0 +1,23 @@
+{
+    "authors" : [
+        {
+            "name" : "Danny Berger",
+            "email" : "dpb587@gmail.com"
+        }
+    ],
+    "autoload" : {
+        "psr-0" : {
+            "DPB\\OpenGrokCLI" : "src/"
+        }
+    },
+    "description" : "Command line tool for OpenGrok searches.",
+    "homepage" : "http://dpb587.github.com/opengrok-cli",
+    "license" : "MIT",
+    "name" : "dpb587/opengrok-cli",
+    "require" : {
+        "symfony/console" : "dev-master"
+    },
+    "require-dev" : {
+        "symfony/finder" : "dev-master"
+    }
+}

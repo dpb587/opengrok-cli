@@ -1,0 +1,22 @@
+#!/usr/bin/env php
+<?php
+
+/**
+ * (c) Danny Berger <dpb587@gmail.com>
+ *
+ * For the full copyright and license information, please view the LICENSE
+ * file that was distributed with this source code.
+ */
+
+require_once __DIR__ . '/../vendor/autoload.php';
+
+$app = new DPB\OpenGrokCLI\Application();
+$app->run(
+    new Symfony\Component\Console\Input\ArgvInput(
+        array_merge(
+            array($argv[0]),
+            array('opengrok-cli'),
+            array_slice($argv, 1)
+        )
+    )
+);
