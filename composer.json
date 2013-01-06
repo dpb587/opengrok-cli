@@ -15,9 +15,9 @@
     "license" : "MIT",
     "name" : "dpb587/opengrok-cli",
     "require" : {
-        "symfony/console" : "dev-master"
+        "symfony/console" : "2.1.x"
     },
     "require-dev" : {
-        "symfony/finder" : "dev-master"
+        "symfony/finder" : "2.1.x"
     }
 }

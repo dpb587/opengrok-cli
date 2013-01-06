@@ -1,37 +1,33 @@
 {
-    "hash": "6c6dfae91f3b22380ee9ac2cb2088913",
+    "hash": "d36b9060824c65d8c9a1617049fe59e0",
     "packages": [
         {
             "name": "symfony/console",
-            "version": "dev-master",
+            "version": "v2.1.6",
             "target-dir": "Symfony/Component/Console",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/Console",
-                "reference": "4a74ab0170585fd25d925ff94582f68b0037f016"
+                "reference": "v2.1.6"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://github.com/symfony/Console/zipball/4a74ab0170585fd25d925ff94582f68b0037f016",
-                "reference": "4a74ab0170585fd25d925ff94582f68b0037f016",
+                "url": "https://github.com/symfony/Console/archive/v2.1.6.zip",
+                "reference": "v2.1.6",
                 "shasum": ""
             },
             "require": {
                 "php": ">=5.3.3"
             },
-            "time": "1350206314",
+            "time": "2012-12-13 17:42:00",
             "type": "library",
-            "extra": {
-                "branch-alias": {
-                    "dev-master": "2.2-dev"
-                }
-            },
             "installation-source": "source",
             "autoload": {
                 "psr-0": {
-                    "Symfony\\Component\\Console\\": ""
+                    "Symfony\\Component\\Console": ""
                 }
             },
+            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "MIT"
             ],
@@ -49,61 +45,12 @@
             "homepage": "http://symfony.com"
         }
     ],
-    "packages-dev": [
-        {
-            "name": "symfony/finder",
-            "version": "dev-master",
-            "target-dir": "Symfony/Component/Finder",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/symfony/Finder",
-                "reference": "be47860ddba8647f966c4e5eed06024f31785d43"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://github.com/symfony/Finder/zipball/be47860ddba8647f966c4e5eed06024f31785d43",
-                "reference": "be47860ddba8647f966c4e5eed06024f31785d43",
-                "shasum": ""
-            },
-            "require": {
-                "php": ">=5.3.3"
-            },
-            "time": "1350156028",
-            "type": "library",
-            "extra": {
-                "branch-alias": {
-                    "dev-master": "2.2-dev"
-                }
-            },
-            "installation-source": "source",
-            "autoload": {
-                "psr-0": {
-                    "Symfony\\Component\\Finder\\": ""
-                }
-            },
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Fabien Potencier",
-                    "email": "fabien@symfony.com"
-                },
-                {
-                    "name": "Symfony Community",
-                    "homepage": "http://symfony.com/contributors"
-                }
-            ],
-            "description": "Symfony Finder Component",
-            "homepage": "http://symfony.com"
-        }
-    ],
+    "packages-dev": null,
     "aliases": [
 
     ],
     "minimum-stability": "stable",
-    "stability-flags": {
-        "symfony/console": 20,
-        "symfony/finder": 20
-    }
+    "stability-flags": [
+
+    ]
 }
