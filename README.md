@@ -7,6 +7,7 @@ Setup
 -----
 
     $ git clone git://github.com/dpb587/opengrok-cli.git
+    $ cd opengrok-cli/
     $ composer.phar install
 
 
@@ -39,9 +40,10 @@ compiled version. For example:
 
     $ export OPENGROK_SERVER=http://lxr.php.net
     $ export OPENGROK_PROJECT=PHP_5_4
-    $ ./bin/compile
+    $ php -dphar.readonly=0 ./bin/compile
     $ unset OPENGROK_SERVER OPENGROK_PROJECT
-    $ php opengrok-cli.phar oci_internal_debug
+    $ chmod +x opengrok-cli.phar
+    $ ./opengrok-cli.phar oci_internal_debug
     /ext/oci8/oci8.c:777: PHP_FUNCTION(oci_internal_debug);
     /ext/oci8/oci8.c:862: 	PHP_FE(oci_internal_debug,			arginfo_oci_internal_debug)
     /ext/oci8/oci8.c:932: 	PHP_FALIAS(ociinternaldebug,	oci_internal_debug,		arginfo_oci_internal_debug)
