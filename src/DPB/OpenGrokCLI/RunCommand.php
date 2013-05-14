@@ -30,6 +30,7 @@ class RunCommand extends Command
                     new InputOption('max-count', 'm', InputOption::VALUE_REQUIRED, 'The maximum number of files shown', 1000),
                     new InputOption('no-lines', null, InputOption::VALUE_NONE, 'Do not output line numbers after the file names'),
                     new InputOption('null', null, InputOption::VALUE_NONE, 'Output a zero byte (the ASCII NUL character) instead of the character that normally follows a file name.'),
+                    new InputOption('path', null, InputOption::VALUE_REQUIRED, 'Optional file path to limit search', ''),
                 )
             )
             ->setDescription('Command line tool for OpenGrok searches.')
@@ -54,6 +55,7 @@ class RunCommand extends Command
                     . '&n=' . $input->getOption('max-count')
                     . '&q=' . rawurlencode($input->getArgument('query'))
                     . '&project=' . implode('&project=', $project)
+                    . '&path=' . rawurlencode($input->getOption('path'))
                     . '&sort=fullpath'
             )
         );
