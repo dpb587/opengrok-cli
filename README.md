@@ -8,6 +8,7 @@ Setup
 
     $ git clone git://github.com/dpb587/opengrok-cli.git
     $ cd opengrok-cli/
+    $ curl -sS https://getcomposer.org/installer | php  # If you don't already have Composer
     $ composer.phar install
 
 
