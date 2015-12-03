@@ -85,7 +85,7 @@ class RunCommand extends Command
 
                 $last = $file[1] . ':' . $file[2];
 
-                $out .= $null ? chr(0) : "\n";
+                $out .= $optNull ? chr(0) : "\n";
             } else {
                 if ($optNoLine) {
                     $out .= ($color ? "\033[36m:\033[0m" : ":");
